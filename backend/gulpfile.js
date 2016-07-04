@@ -86,7 +86,7 @@ gulp.task('lint', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src(['!'+paths.source.bower+'/**', paths.source.html])
+    return gulp.src(['!'+paths.source.bower+'/**', '!'+paths.source.index, paths.source.html])
     .pipe(flatten())
     .pipe(gulp.dest(paths.target.htmlDev))
     .pipe(gulp.dest(paths.target.htmlProd))

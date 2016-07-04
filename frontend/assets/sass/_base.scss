@@ -1,19 +1,7 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
-       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
-}
-
 // Colors
 $bg-color:    #F0F7FA;
 $blue:        #6cb6ad;
 
 h1{
-  color: red;
+  color: green;
 }
