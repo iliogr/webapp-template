@@ -19,30 +19,30 @@ var livereload      = require('gulp-livereload');
 var paths = {
     source: {
         bower:      '../frontend/bower_components',
-        images:     __dirname+'/../frontend/assets/images/**',
-        js:         __dirname+'/../frontend/**/*.js',
-        html:       __dirname+'/../frontend/**/*.html',
-        index:      __dirname+'/../frontend/index.html',
-        sass:       __dirname+'/../frontend/assets/sass/*.scss',
-        fonts:      __dirname+'/../frontend/assets/fonts/**'
+        images:     '../frontend/assets/images/**',
+        js:         '../frontend/**/*.js',
+        html:       '../frontend/**/*.html',
+        index:      '../frontend/index.html',
+        sass:       '../frontend/assets/sass/*.scss',
+        fonts:      '../frontend/assets/fonts/**'
     },
     target: {
-        dev:        __dirname+'/../dist.dev',
-        prod:       __dirname+'/../dist.prod',
-        imagesDev:  __dirname+'/../dist.dev/images',
-        imagesProd: __dirname+'/../dist.prod/images',
-        htmlDev:    __dirname+'/../dist.dev/html',
-        htmlProd:   __dirname+'/../dist.prod/html',
-        cssDev:     __dirname+'/../dist.dev/css',
-        cssProd:    __dirname+'/../dist.prod/cssProd',
-        jsDev:      __dirname+'/../dist.dev/js',
-        jsProd:     __dirname+'/../dist.prod/js',
-        vendorDev:  __dirname+'/../dist.dev/vendor',
-        vendorProd: __dirname+'/../dist.prod/vendor',
-        indexDev:   __dirname+'/../dist.dev/html/index.html',
-        indexProd:  __dirname+'/../dist.prod/html/index.html',
-        fontsDev:   __dirname+'/../dist.dev/fonts',
-        fontsProd:  __dirname+'/../dist.prod/fonts'
+        dev:        '../dist.dev',
+        prod:       '../dist.prod',
+        imagesDev:  '../dist.dev/images',
+        imagesProd: '../dist.prod/images',
+        htmlDev:    '../dist.dev/html',
+        htmlProd:   '../dist.prod/html',
+        cssDev:     '../dist.dev/css',
+        cssProd:    '../dist.prod/cssProd',
+        jsDev:      '../dist.dev/js',
+        jsProd:     '../dist.prod/js',
+        vendorDev:  '../dist.dev/vendor',
+        vendorProd: '../dist.prod/vendor',
+        indexDev:   '../dist.dev/html/index.html',
+        indexProd:  '../dist.prod/html/index.html',
+        fontsDev:   '../dist.dev/fonts',
+        fontsProd:  '../dist.prod/fonts'
     }
 }
 
