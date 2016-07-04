@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'CiscoSans';
+    src:url('../fonts/CiscoSansTTRegular.ttf');
+    src:url('../fonts/CiscoSansTTRegular.eot') format('embedded-opentype'),
+    url('../fonts/CiscoSansTTRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CiscoSansLight';
+    src:url('../fonts/CiscoSansTTLight.ttf');
+    src:url('../fonts/CiscoSansTTLight.eot') format('embedded-opentype'),
+    url('../fonts/CiscoSansTTExtraLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CiscoSansThin';
+    src:url('../fonts/CiscoSansTTThin.ttf');
+    src:url('../fonts/CiscoSansTTThin.eot') format('embedded-opentype'),
+    url('../fonts/CiscoSansTTThin.woff') format('woff');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(../../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+// Font variables
+$ciscoRegular: CiscoSans;
+$ciscoThin: CiscoSansThin;
+$ciscoLight: CiscoSansLight;
+
+$breakpoint-phones: 480px;
+$breakpoint-tablets: 1024px;
+
+// Colors
+$bg-color:    #F0F7FA;
+$blue:        #6cb6ad;
+$cisco-blue:  #0174c4;
+$text-grey:   #555;
+$light-blue:  #75afdb;
+$footer-grey:    #292c2f;
+
+// Palette
+$icy-blue:    #C4D6ED;
+$pale-grey:   #E8EBF1;
+$pale-grey-2: #f2f2f2;
+$light-grey:  #C6C7CA;
+$dark-grey:   #58595b;
+$jade:        #A1D6CA;
+$dark-jade:   #279989;
+$river-blue:  #097DBC;
+
+h1{
+  color: green;
+}
