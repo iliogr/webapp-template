@@ -36,7 +36,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../dist.dev'));
 // Removing Angular's annoying # from the URL
-app.get('/main', function(req, res) {
+app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname + "/../dist.dev/html/index.html"));
 });
 // ===========================================================================
