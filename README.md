@@ -50,3 +50,9 @@
 	|-- js/
 	|-- vendor/
 ```
+
+### Setup
+1. From inside the **backend** folder run `npm install`
+2. From inside the **backend** folder run `bower install`
+3. From inside the **backend** folder run `gulp`
+4. On a new console, while gulp is running, start the webserver `NODE_ENV=development node server.js`
