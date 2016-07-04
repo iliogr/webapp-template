@@ -23,7 +23,8 @@ var paths = {
         js:         '../frontend/**/*.js',
         html:       '../frontend/**/*.html',
         index:      '../frontend/index.html',
-        sass:       '../frontend/assets/sass/*.scss'
+        sass:       '../frontend/assets/sass/*.scss',
+        fonts:      '../frontend/assets/fonts/**'
     },
     target: {
         dev:        '../dist.dev',
@@ -39,7 +40,9 @@ var paths = {
         vendorDev:  '../dist.dev/vendor',
         vendorProd: '../dist.prod/vendor',
         indexDev:   '../dist.dev/html/index.html',
-        indexProd:  '../dist.prod/html/index.html'
+        indexProd:  '../dist.prod/html/index.html',
+        fontsDev:   '../dist.dev/fonts',
+        fontsProd:   '../dist.prod/fonts'
     }
 }
 
@@ -88,6 +91,13 @@ gulp.task('html', function() {
     .pipe(gulp.dest(paths.target.htmlDev))
     .pipe(gulp.dest(paths.target.htmlProd))
     .pipe(livereload());
+});
+
+gulp.task('fonts', function() {
+    return gulp.src([paths.source.fonts])
+    .pipe(flatten())
+    .pipe(gulp.dest(paths.target.fontsDev))
+    .pipe(gulp.dest(paths.target.fontsProd));
 });
 
 gulp.task('js', function() {
@@ -159,7 +169,7 @@ function onError(err) {
     this.emit('end');
 }
 
-gulp.task('default', ['bower', 'lint', 'js', 'sass', 'images',  'html', 'injectDev', 'injectProd', 'watch']);
+gulp.task('default', ['bower', 'lint', 'js', 'sass', 'images', 'fonts', 'html', 'injectDev', 'injectProd', 'watch']);
 
 
 
